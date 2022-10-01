@@ -1,5 +1,5 @@
 
-import calculadora.Calculadora;
+import atv2.Calculadora;
 import java.util.Scanner;
 
 class Principal {
@@ -13,10 +13,12 @@ class Principal {
         
         System.out.println("Informe o primeiro número: ");
         num1 = sc.nextFloat();
+        System.out.println("Informe o segundo número: ");
+        num2 = sc.nextFloat();
         
-        System.out.println("Soma: " + calculadora.somar(4, 66));
-        System.out.println("Subtração: " + calculadora.subtrair(4, 66));
-        System.out.println("Multiplicação: " + calculadora.multiplicar(4, 66));
-        System.out.println("Divisão: " + calculadora.dividir(4, 66));
+        System.out.println("Soma: " + calculadora.somar(num1, num2));
+        System.out.println("Subtração: " + calculadora.subtrair(num1, num2));
+        System.out.println("Multiplicação: " + calculadora.multiplicar(num1, num2));
+        System.out.println("Divisão: " + calculadora.dividir(num1, num2));
     }
 }
